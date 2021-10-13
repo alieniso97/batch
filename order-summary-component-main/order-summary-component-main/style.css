@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+
+:root{
+    --pale_blue: hsl(225, 100%, 94%);
+    --bright_blue: hsl(245, 75%, 52%);
+    --very_pale_blue: hsl(225, 100%, 98%);
+    --desaturated_blue: hsl(224, 23%, 55%);
+    --dark_blue: hsl(223, 47%, 23%);
+}
+body{
+    background: url("images/pattern-background-desktop.svg"),var(--pale_blue);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+.container{
+    width: 450px;
+    height: auto;
+    background: var(--very_pale_blue);
+    border-radius: 15px;
+    overflow: hidden;
+
+
+}
+
+
+.summary {
+    width: 350px;
+    height: auto;
+
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+.summary h2{
+    font-weight: 700;
+
+}
+.summary p{
+    font-size: 16px;
+    color: var(--desaturated_blue);
+    font-weight: 500;
+
+}
+.plan {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    background-color: var(--pale_blue);
+    margin-left: 40px;
+    padding: 15px 10px;
+    margin-top: 20px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.plan span{
+    margin-left: 15px;
+}
+.plan a{
+    margin-left: 100px;
+    text-decoration: none;
+
+}
+.payment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 30px;
+}
+.payment button{
+    background-color: var(--bright_blue);
+    padding: 15px 120px;
+    margin-top: 20px;
+    text-align: center;
+
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--very_pale_blue);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--very_pale_blue);
+
+    cursor: pointer;
+
+}
+.payment a{
+    text-decoration: none;
+
+    margin: 30px 0;
+}
+
+@media (max-width:375px) {
+   body{
+       background-image: url("images/pattern-background-mobile.svg");
+   }
+    .container{
+        width: 350px;
+    }
+    .summary{
+        width: 270px;
+        margin-left: 40px;
+
+    }
+
+    .plan{
+        width: 270px;
+       
+
+    }
+    .plan a{
+        margin-left: 70px;
+    }
+    .payment button{
+        padding: 15px 80px;
+    }
+}
+
